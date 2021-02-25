@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+  }
+  body {
+    background: #018DED 
+       url(https://unsplash.it/1500/1000?image=881&blur=5);
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    min-height: 100vh;
+    min-width: 100%;
+    align-items: center;
+  }
+  .clock{
+      height: 30rem;
+      width: 30rem;
+      margin: auto;
+      border: 16px solid white;
+      border-radius: 50%;
+  }
+  .clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+     /* account for the height of the clock hands */
+  }
+  .hand {
+    background: white;
+    position: absolute;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    
+  }
+.hour-hand{
+    width: 26%;
+    height: 1rem;
+    top: 50%;
+    left: 24%;
+    transform: rotate(20deg);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.min-hand{
+    width: 40%;
+    height: 0.5rem;
+    top: 50%;
+    left: 10%;
+    transform: rotate(160deg);
+   
+}
+.second-hand{
+  width: 50%;
+  height: 0.2rem;
+  top: 50%;
+  transform: rotate(90deg);
+  background-color: rgb(1, 65, 65);
+}
+.point{
+  border: 6px solid white;
+  height: 1%;
+  width: 1%;
+  border-radius: 50%;
+  position: absolute;
+  top: 49%;
+  left: 48%;
+}
